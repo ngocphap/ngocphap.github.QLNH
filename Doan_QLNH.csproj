@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5862FC2F-D6E2-4A6D-9B3C-636720663C9C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Doan_QLNH</RootNamespace>
+    <AssemblyName>Doan_QLNH</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v21.1, Version=21.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v21.1, Version=21.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v21.1.Core, Version=21.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v21.1.Core, Version=21.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.1, Version=21.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Controls.v21.1, Version=21.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v21.1, Version=21.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.1, Version=21.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\BanCtrl.cs" />
+    <Compile Include="Controllers\DangNhapCtrl.cs" />
+    <Compile Include="Controllers\GoiMonCtrl.cs" />
+    <Compile Include="Controllers\HoaDonCtrl.cs" />
+    <Compile Include="Controllers\KhachHangCtrl.cs" />
+    <Compile Include="Controllers\KhuVucCtrl.cs" />
+    <Compile Include="Controllers\LoaiThucDonCtrl.cs" />
+    <Compile Include="Controllers\NhanVienCtrl.cs" />
+    <Compile Include="Controllers\PhanQuyenCtrl.cs" />
+    <Compile Include="Controllers\ThucDonCtrl.cs" />
+    <Compile Include="dbSoftQuanLyNhaHangDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbSoftQuanLyNhaHangDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BanMod.cs" />
+    <Compile Include="Models\connection.cs" />
+    <Compile Include="Models\DangNhapMod.cs" />
+    <Compile Include="Models\GoiMonMod.cs" />
+    <Compile Include="Models\HoaDonMod.cs" />
+    <Compile Include="Models\KhachHangMod.cs" />
+    <Compile Include="Models\KhuVucMod.cs" />
+    <Compile Include="Models\LoaiThucDonMod.cs" />
+    <Compile Include="Models\NhanVienMod.cs" />
+    <Compile Include="Models\PhanQuyenMod.cs" />
+    <Compile Include="Models\ReportHoaDon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportHoaDon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ThucDonMod.cs" />
+    <Compile Include="Models\UserControl.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Views\frmBillHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmBillHoaDon.Designer.cs">
+      <DependentUpon>frmBillHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmDangKy.Designer.cs">
+      <DependentUpon>frmDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmDoiMatKhau.Designer.cs">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\uctBan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctBan.Designer.cs">
+      <DependentUpon>uctBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\uctDanhSachTD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctDanhSachTD.Designer.cs">
+      <DependentUpon>uctDanhSachTD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\uctMonDaGoi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctMonDaGoi.Designer.cs">
+      <DependentUpon>uctMonDaGoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\uctKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctKhachHang.Designer.cs">
+      <DependentUpon>uctKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\uctKhuVuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctKhuVuc.Designer.cs">
+      <DependentUpon>uctKhuVuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\uctLoaiThucDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctLoaiThucDon.Designer.cs">
+      <DependentUpon>uctLoaiThucDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\uctNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctNhanVien.Designer.cs">
+      <DependentUpon>uctNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\uctPhanQuyen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctPhanQuyen.Designer.cs">
+      <DependentUpon>uctPhanQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\uctThucDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctThucDon.Designer.cs">
+      <DependentUpon>uctThucDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\uctGoiMon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctGoiMon.Designer.cs">
+      <DependentUpon>uctGoiMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\uctSearchNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctSearchNhanVien.Designer.cs">
+      <DependentUpon>uctSearchNhanVien.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Views\frmBillHoaDon.resx">
+      <DependentUpon>frmBillHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmDangKy.resx">
+      <DependentUpon>frmDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmDoiMatKhau.resx">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\uctBan.resx">
+      <DependentUpon>uctBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\uctDanhSachTD.resx">
+      <DependentUpon>uctDanhSachTD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\uctKhachHang.resx">
+      <DependentUpon>uctKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\uctMonDaGoi.resx">
+      <DependentUpon>uctMonDaGoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\uctKhuVuc.resx">
+      <DependentUpon>uctKhuVuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\uctLoaiThucDon.resx">
+      <DependentUpon>uctLoaiThucDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\uctNhanVien.resx">
+      <DependentUpon>uctNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\uctThucDon.resx">
+      <DependentUpon>uctThucDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\uctGoiMon.resx">
+      <DependentUpon>uctGoiMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\uctSearchNhanVien.resx">
+      <DependentUpon>uctSearchNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dbSoftQuanLyNhaHangDataSet.xsc">
+      <DependentUpon>dbSoftQuanLyNhaHangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbSoftQuanLyNhaHangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbSoftQuanLyNhaHangDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbSoftQuanLyNhaHangDataSet.xss">
+      <DependentUpon>dbSoftQuanLyNhaHangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Models\ReportHoaDon.xsc">
+      <DependentUpon>ReportHoaDon.xsd</DependentUpon>
+    </None>
+    <None Include="Models\ReportHoaDon.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportHoaDon.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Models\ReportHoaDon.xss">
+      <DependentUpon>ReportHoaDon.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
