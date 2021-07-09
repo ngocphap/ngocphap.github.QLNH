@@ -89,11 +89,6 @@
     <Compile Include="Controllers\NhanVienCtrl.cs" />
     <Compile Include="Controllers\PhanQuyenCtrl.cs" />
     <Compile Include="Controllers\ThucDonCtrl.cs" />
-    <Compile Include="dbSoftQuanLyNhaHangDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbSoftQuanLyNhaHangDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Models\BanMod.cs" />
     <Compile Include="Models\connection.cs" />
     <Compile Include="Models\DangNhapMod.cs" />
@@ -111,7 +106,6 @@
     </Compile>
     <Compile Include="Models\ThucDonMod.cs" />
     <Compile Include="Models\UserControl.cs" />
-    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Views\frmBillHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,17 +259,6 @@
     <EmbeddedResource Include="Views\uctSearchNhanVien.resx">
       <DependentUpon>uctSearchNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="dbSoftQuanLyNhaHangDataSet.xsc">
-      <DependentUpon>dbSoftQuanLyNhaHangDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="dbSoftQuanLyNhaHangDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dbSoftQuanLyNhaHangDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="dbSoftQuanLyNhaHangDataSet.xss">
-      <DependentUpon>dbSoftQuanLyNhaHangDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Models\ReportHoaDon.xsc">
       <DependentUpon>ReportHoaDon.xsd</DependentUpon>
     </None>
@@ -303,21 +286,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="SqlServerTypes\readme.htm" />
-    <Content Include="SqlServerTypes\x64\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
